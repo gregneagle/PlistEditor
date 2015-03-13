@@ -7,3 +7,5 @@ browser. User could then view and/or edit the plist via the browser. If they
 chose to save their changes, the plist could be send back as a string.
 
 The web app need only read and write plists as strings.
+
+To play with the demo, open plisteditor.html in your browser.
