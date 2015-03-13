@@ -9,3 +9,6 @@ chose to save their changes, the plist could be send back as a string.
 The web app need only read and write plists as strings.
 
 To play with the demo, open plisteditor.html in your browser.
+
+For extra fun, paste a complex plist like a Munki manifest or a Munki pkginfo
+file into the plist pane.
