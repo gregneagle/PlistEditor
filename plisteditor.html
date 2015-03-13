@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- json2.js needed for older browsers??? -->
+    <!--<script src="json2.js"></script>-->
+    <!-- jQuery (for deployment you'd want your own copies)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    
+    <!-- Local JavaScript -->
+    <script src="jquery.plisteditor.js"></script>
+    <script src="plistparser.js"></script>
+    <script src="plisteditor.js"></script>
+    
+    <!-- Bootstrap 3 (for deployment you'd want your own copies)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- local css -->
+    <link rel="stylesheet" href="plisteditor.css"/>
+
+    <title>pkginfo editor</title>
+
+    <style>
+        body {
+          padding: 0 70px;
+        }
+        #plist {
+          margin: 10px 10px 10px 32px;
+          width: 100%;
+          height: 100%;
+          min-height: 70px;
+          font-family: Courier, monospace;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+      <div class="col-md-3">
+          <pre id="path"></pre>
+      </div>
+      <div class='col-md-9'>
+        <div role="tabpanel">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#editortab" aria-controls="editortab" role="tab" data-toggle="tab">Editor</a></li>
+            <li role="presentation"><a href="#plisttab" aria-controls="plisttab" role="tab" data-toggle="tab">plist</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="editortab">
+                  <div id="editor" class="plist-editor"></div>
+                  Make changes here; look at plist tab; make changes in plist tab; look here
+              </div>
+              <div role="tabpanel" class="tab-pane" id="plisttab">
+                  <textarea id="plist" rows=20></textarea>
+                  Make changes here; look at editor tab; make changes in editor tab; look here
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
