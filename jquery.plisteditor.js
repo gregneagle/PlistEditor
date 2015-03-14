@@ -433,6 +433,15 @@
                 // null type; select new type
                 val = parse($(this).val() || 'null');
                 var type = getType(val);
+                if (type == 'string') {
+                    // strings and dates are both strings in JSON
+                    // so try to parse the string as a date
+                    var timestamp = Date.parse(val);
+                    if (!isNaN(timestamp)) {
+                        type = 'date';
+                        val = new Date(timestamp);
+                    }
+                }
                 $(this).parent().data('type', type);
                 // jQuery doesn't actually update the DOM, so we're going to
                 $(this).parent().attr('data-type', type);
