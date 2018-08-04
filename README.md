@@ -1,4 +1,4 @@
-###plisteditor
+### plisteditor
 
 This is a rough demo of a JavaScript-based plist editor.
 
