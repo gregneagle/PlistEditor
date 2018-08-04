@@ -13,3 +13,5 @@ To play with the demo, open plisteditor.html in your browser.
 
 For extra fun, paste a complex plist like a Munki manifest or a Munki pkginfo
 file into the plist pane.
+
+(Update: this evolved into the plist editor in MWA2: https://github.com/munki/mwa2)
